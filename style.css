@@ -1,0 +1,338 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*========  Section Content  ========*/
+
+body{
+    font-family: system-ui, sans-serif;
+}
+
+.container {
+    max-width: 1800px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+
+
+/*===================================*/
+
+
+
+
+/*=========  Header Start  ========*/
+
+header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+header .wrapper {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.navbar {
+    margin-left: 30px;    
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.navbar a {
+
+    text-decoration: none;
+    color: #1F2937;
+}
+
+.navbar a:hover {
+    color: #00C78F;
+}
+
+.right {
+    margin: 0 0 0 auto;
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.right .btn button{
+    border: none;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.right .btn {
+    display: flex;
+    column-gap: 16px;
+}
+
+.right .search{
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .bag svg{
+    width: 20px;
+    height: 20px;
+}
+
+.right .join_btn, .right .seller_btn{
+    padding: 0 12px;
+    background-color: #009f7f;
+    color: #fff;
+    font-weight: 600;
+    height: 36px;
+}
+
+.right .join_btn, .right .seller_btn{
+    border-radius: 5px;
+}
+
+
+
+.right input {
+    border: none;
+}
+
+.logo img {
+    width: 160px;
+}
+
+/*=========  Header End  ========*/
+
+
+
+
+/*======  section_shop_now Srart =========*/
+
+.main_image {
+    margin: 24px 0 0;
+    padding: 0 0 54px;
+}
+
+.main_image .image {
+    border-radius: 20px;
+    overflow: hidden;
+    height: auto;
+}
+
+.main_image .image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+/*======  section_shop_now End =========*/
+
+
+/*===========  section_book Srart  =========*/
+
+.book_category .title{
+    margin: 0 0 28px;
+}
+
+.book_category .title h3 {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+
+
+.books {
+    position: relative;
+}
+
+.books .book_image {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 185px;
+}
+
+
+.books .swiper {
+    width: 100%;
+    height: 100%;
+    position: static;
+}
+
+.books .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    width: 185px;
+}
+
+.books .swiper-slide:not(:last-child) {
+    margin: 0 24px 0 0;
+}
+
+.books .swiper-button-next::after,
+.books .swiper-button-prev::after {
+    display: none;
+}
+
+.books .swiper-button-next,
+.books .swiper-button-prev {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 7px -4px rgba(0, 0, 0, 0.9);
+}
+
+.books .swiper-button-next svg,
+.books .swiper-button-prev svg {
+    width: 20px;
+    height: 20px;
+    color: #000;
+}
+
+.books .swiper .swiper-button-disabled {
+    display: none;
+}
+
+.books .swiper .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, -15px);
+}
+
+.books .swiper .swiper-button-prev {
+    left: var(--swiper-navigation-sides-offset, -15px);
+}
+
+.books .book_image img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.books a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #4b4b4b;
+}
+
+.books a:hover {
+    color: #F97316;
+}
+
+.books p {
+    margin-top: 10px;
+}
+
+
+/*===========  section_book End  =========*/
+
+/*=============  Footer Start  ===========*/
+
+footer {
+    padding: 96px 0 64px;
+}
+
+.footer_content {
+    display: flex;
+    font-size: 14px;
+    line-height: 24px;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.footer_content .columns {
+
+    width: 300px;
+    color: #4b4b4b;
+}
+
+.footer_content .columns p {
+    margin: 18px 0;
+}
+
+.footer_content ul {
+    list-style: none;
+}
+
+.footer_content .columns li {
+    margin-bottom: 20px;
+}
+
+.footer_content .columns a {
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+.footer_content .columns a:hover {
+    color: #F97316;
+}
+
+.footer_content .columns h4,
+.last_column H4 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 36px;
+}
+
+.footer_content .logo {
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.email {
+    padding: 20px;
+    width: 86%;
+}
+
+.subscribe {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 44px 0 0;
+    position: relative;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+}
+
+.btn_send {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+    color: #6e6e6e;
+}
+
+.btn_send:hover{
+    color: #00C78F;
+    cursor: pointer;
+}
+
+.email {
+    border: none;
+    border-radius: 9px 0 0 9px;
+    outline-width: thin;
+    outline-color: #508af7;
+    width: 100%;
+}
+
+
+
+/*=============  Footer End  ===========*/
